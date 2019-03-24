@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.DashboardFragment">
+
+    <LinearLayout
+        style="@style/Widget.My.Backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="100dp"
+        android:paddingBottom="100dp">
+
+        <include layout="@layout/backdrop" />
+    </LinearLayout>
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/app_bar"
+            style="@style/Widget.My.Toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingStart="4dp"
+            android:paddingLeft="4dp"
+            android:paddingEnd="8dp"
+            android:paddingRight="8dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@drawable/menu"
+            app:title="@string/app_name" />
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:id="@+id/dashboard_grid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:background="@color/productGridBackgroundColor"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/tvUser"
+            style="@style/LargeText"
+            android:layout_gravity="center_horizontal"
+            android:text="Hi, Nguyen Van A"
+            android:layout_marginTop="56dp"/>
+
+        <TextView
+            style="@style/LargeText"
+            android:layout_gravity="center_horizontal"
+            android:text="Nice working day!" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_item_height"
+                android:orientation="horizontal">
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/contractsDB"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_contracts"
+                    app:dashboard_title="Contracts" />
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/thirdPartyActivityDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_contract_termination"
+                    app:dashboard_title="Contracts Termination" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_item_height"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/deviceInformationDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_map"
+                    app:dashboard_title="Map" />
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/deviceSettingsDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_repossessions"
+                    app:dashboard_title="Repossessions" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dashboard_item_height"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/helpDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_record"
+                    app:dashboard_title="Record" />
+
+                <phannguyen.com.trackingsystem.ui.components.DashboardItemLayout
+                    android:id="@+id/backupDataDashboard"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    app:dashboard_icon="@drawable/ic_notification"
+                    app:dashboard_title="Notification" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TrackingSystem</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="button_next">Sign In</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="error_password">Password must contain at least 8 characters.</string>
+
+    <string-array name="list_items">
+        <item>20160515-603009 1234_NGUYỄN VĂN THỦ_01-03-2019</item>
+        <item>20160515-603009 1234_NGUYỄN THI THANH THUÝ_01-03-2019</item>
+        <item>20160515-603009 1234_TRẦN QUANG TIẾP_01-03-2019</item>
+        <item>20160515-603009 1234_ĐỖ BÍCH KIỀU_01-03-2019</item>
+        <item>20160515-603009 1234_HUỲNH ĐẠI QUỐC_01-03-2019</item>
+        <item>20160515-603009 1234_NGUYỄN THỊ HỒNG ĐÀO_01-03-2019</item>
+        <item>20160515-603009 1234_TRẦN THỊ THUÝ TRANG_01-03-2019</item>
+        <item>20160515-603009 1234_NGÔ THỊ HẬU_01-03-2019</item>
+
+    </string-array>
+    <string name="location_updated">Location Updated: %1$s</string>
+</resources>

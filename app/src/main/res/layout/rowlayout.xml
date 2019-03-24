@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    >
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="60dp"
+        android:background="@drawable/ripple"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/txtcontractid"
+            android:layout_column="0"
+            android:text="20160515-603009 1234"
+            android:paddingRight="5dp"
+            android:gravity="left"
+            />
+
+        <TextView
+            android:id="@+id/txtname"
+            android:layout_width="146dp"
+            android:layout_column="1"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:text="NGUYEN THI VAN ANH"></TextView>
+        <TextView
+            android:id="@+id/txttime"
+            android:layout_column="2"
+            android:text="01-02-2019"
+            android:paddingLeft="5dp"
+            android:gravity="left">
+        </TextView>
+    </TableRow>
+
+
+</TableLayout>
